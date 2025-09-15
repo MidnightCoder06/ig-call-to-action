@@ -50,12 +50,14 @@ export default function Home() {
                 fontSize: '20px'
               }}
               onMouseEnter={(e) => {
-                e.target.style.background = 'linear-gradient(135deg, #DC2626 0%, #B91C1C 100%)';
-                e.target.style.boxShadow = '0 15px 35px rgba(239, 68, 68, 0.4)';
+                const target = e.target as HTMLButtonElement;
+                target.style.background = 'linear-gradient(135deg, #DC2626 0%, #B91C1C 100%)';
+                target.style.boxShadow = '0 15px 35px rgba(239, 68, 68, 0.4)';
               }}
               onMouseLeave={(e) => {
-                e.target.style.background = 'linear-gradient(135deg, #EF4444 0%, #DC2626 100%)';
-                e.target.style.boxShadow = '0 10px 25px rgba(239, 68, 68, 0.3)';
+                const target = e.target as HTMLButtonElement;
+                target.style.background = 'linear-gradient(135deg, #EF4444 0%, #DC2626 100%)';
+                target.style.boxShadow = '0 10px 25px rgba(239, 68, 68, 0.3)';
               }}
             >
               Schedule Call
